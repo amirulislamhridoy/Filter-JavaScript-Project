@@ -6,6 +6,7 @@ body{
     font-family: 'Kaushan Script';
     margin: 0;
 }
+/* header */
 nav{
     display: flex;
     justify-content: space-between;
@@ -49,6 +50,39 @@ nav{
     display: none;
     cursor: pointer;
     color: var(--color)
+}
+/* banner */
+.banner{
+    height: calc(100vh - 72px);
+    background-image: linear-gradient(rgba(255, 217, 0, 0.344), rgba(255, 217, 0, 0.11)), url('./images/headerBcg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    color: white;
+    font-size: 40px;
+}
+.banner b{
+    color: var(--color);
+    font-size: 60px;
+}
+.banner button{
+    font-family: 'Kaushan Script';
+    font-size: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.banner button:hover{
+    color: var(--color);
+    background-color: black;
 }
 
 
