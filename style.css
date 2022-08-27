@@ -1,0 +1,40 @@
+:root {
+    --color: #ef7998;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    color: var(--color);
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 10px;
+}
+.nav-end span{
+    font-size: 16px;
+    margin-right: 80px;
+}
+.nav-end button{
+    font-size: 16px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-family: 'Kaushan Script', cursive;
+    cursor: pointer;
+}
+.nav-end button:hover{
+    background-color: var(--color);
+    border: 2px solid var(--color);
+    transition-duration: .2s;
+    color: white;
+}
+.nav-end i{
+    margin-right: 20px;
+    margin-left: 0;
+}
