@@ -3,18 +3,24 @@
 }
 
 body{
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Kaushan Script';
+    margin: 0;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 8px 20px;
+    background-color: white;
 }
 .nav-link{
     color: var(--color);
     text-decoration: none;
     font-size: 30px;
     margin: 0 10px;
+}
+.nav-link:hover{
+    color: black;
 }
 .nav-end span{
     font-size: 16px;
@@ -37,4 +43,38 @@ nav{
 .nav-end i{
     margin-right: 20px;
     margin-left: 0;
+}
+.menu-bar{
+    font-size: 26px;
+    display: none;
+    cursor: pointer;
+    color: var(--color)
+}
+
+
+
+@media screen and (max-width: 1000px){
+    nav{
+        position: relative;
+    }
+    .nav-center{
+        background-color: white;
+        position: absolute;
+        top: -150px;
+        left: 0px;
+        width: 100%;
+        transition-duration: 1s;
+    }
+    .nav-center-down{
+        top: 72px;
+    }
+    .nav-link{
+        display: block;
+    }
+    .nav-end{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
 }

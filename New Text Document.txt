@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Project</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <nav>
+        <div class="nav-main">
+            <div>
+                <img src='./images/logo.svg' alt="logo" >
+            </div>
+            <div class="nav-center" id="nav-center">
+                <a class="nav-link" href="#" alt="">Home</a>
+                <a class="nav-link" href="#" alt="">About</a>
+                <a class="nav-link" href="#" alt="">Store</a>
+            </div>
+            <div class="nav-end">
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    +123 456 789
+                </span>
+                <button>
+                    <i class="fa-solid fa-cart-shopping"></i>2Items-$10.49
+                </button>
+            </div>
+            <div class="menu-bar" id="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-center2" id="nav-center2">
+            <div><a class="nav-link" href="#" alt="">Home</a></div>
+            <div><a class="nav-link" href="#" alt="">About</a></div>
+            <div><a class="nav-link" href="#" alt="">Store</a></div>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+const menuBar = document.getElementById('menu-bar');
+const navCenter2 = document.getElementById('nav-center2')
+
+menuBar.addEventListener('click', menuShow)
+
+let menu = false;
+function menuShow(){
+    if(menu){
+        navCenter2.style.display = 'block'
+        menu = false
+    }else{
+        navCenter2.style.display = 'none'
+        menu = true
+    }
+}
+
+
+:root {
+    --color: #ef7998;
+}
+
+body{
+    font-family: 'Kaushan Script';
+    background: black;
+    margin: 0;
+}
+nav{
+    background-color: white;
+    padding: 8px 20px;
+}
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    color: var(--color);
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 10px;
+}
+.nav-link:hover{
+    color: black;
+}
+.nav-end span{
+    font-size: 16px;
+    margin-right: 80px;
+}
+.nav-end button{
+    font-size: 16px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-family: 'Kaushan Script', cursive;
+    cursor: pointer;
+}
+.nav-end button:hover{
+    background-color: var(--color);
+    border: 2px solid var(--color);
+    transition-duration: .2s;
+    color: white;
+}
+.nav-end i{
+    margin-right: 20px;
+    margin-left: 0;
+}
+.menu-bar{
+    font-size: 26px;
+    display: none;
+    cursor: pointer;
+    color: var(--color)
+}
+.nav-center2{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .nav-center{
+        display: none
+    }
+    .nav-end{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+}
+
