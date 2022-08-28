@@ -184,6 +184,7 @@ nav{
 .store-card{
     width: 350px;
     background-color: white;
+    margin: 0 auto;
 }
 .store-card-1{
     position: relative;
@@ -227,6 +228,16 @@ nav{
 
 
 
+@media screen and (max-width: 1800px){
+    #store-card-container{
+        margin: 0 15% 
+    }
+}
+@media screen and (max-width: 1600px){
+    #store-card-container{
+        margin: 0 10% 
+    }
+}
 @media screen and (max-width: 1500px){
     .about-right-img{
         width: 400px;
@@ -234,6 +245,15 @@ nav{
     }
     .about-us{
         padding: 0 10%;
+    }
+    #store-card-container{
+        margin: 0 5% 
+    }
+}
+@media screen and (max-width: 1300px){
+    #store-card-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 10% 
     }
 }
 @media screen and (max-width: 1200px){
@@ -269,6 +289,9 @@ nav{
     .our-store button{
         margin: 0 20px;
     }
+    .store-card{
+        width: 300px;
+    }
 }
 @media screen and (max-width: 850px){
     .about-us{
@@ -285,9 +308,29 @@ nav{
     .store-search-container input{
         width: 80%;
     }
+    #store-card-container{
+        margin: 0 7% 
+    }
+    .store-card{
+        margin: 0 5px;;
+    }
+}
+@media screen and (max-width: 700px){
+    .store-card{
+        width: 200px;
+        margin: 0 auto;;
+    }
 }
 @media screen and (max-width: 500px){
     .store-search-container input{
         width: 70%;
+    }
+    #store-card-container{
+        grid-template-columns: auto;
+        margin: 0 10% 
+    }
+    .store-card{
+        width: 80%;
+        margin: 0 auto;;
     }
 }
