@@ -6,6 +6,9 @@ body{
     font-family: 'Kaushan Script';
     margin: 0;
 }
+button{
+    font-family: 'Kaushan Script';
+}
 /* header */
 nav{
     display: flex;
@@ -73,7 +76,6 @@ nav{
     font-size: 60px;
 }
 .banner button{
-    font-family: 'Kaushan Script';
     font-size: 30px;
     background-color: transparent;
     border-radius: 5px;
@@ -84,9 +86,112 @@ nav{
     color: var(--color);
     background-color: black;
 }
+/* about us */
+.about-us{
+    display: flex;
+    justify-content: center;
+    padding: 0 20%;
+    align-items: center;
+}
+.about-left{
+    margin-right: 10%;
+}
+.about-left h1{
+    font-size: 40px;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+.about-left b{
+    color: var(--color);
+    font-size: 60px;
+}
+.about-left article{
+    color: rgba(0, 0, 0, 0.637);
+    margin-bottom: 20px;
+}
+.about-left button{
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.about-left button:hover{
+    background-color: black;
+    color: var(--color);
+    border: 1px solid black;
+}
+.about-right-img{
+    width: 500px;
+    margin: 80px 0;
+}
+/* our store */
+.our-store{
+    background-color: rgba(0, 0, 0, 0.13);
+}
+.our-store h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+.our-store b{
+    font-size: 65px;
+    color: var(--color);
+}
+.store-btn-container{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.our-store button{
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+    margin: 0 30px;
+}
+.our-store button:hover{
+    color: var(--color);
+    background-color: black;
+}
+.store-search-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.store-search-container span{
+    border: 1px solid var(--color);
+    padding: 5px 12px;
+    background-color: var(--color);
+}
+.store-search-container input{
+    font-size: 20px;
+    padding: 5px 5px;
+    width: 500px;
+    font-family: 'Kaushan Script';
+}
 
 
 
+
+@media screen and (max-width: 1500px){
+    .about-right-img{
+        width: 400px;
+        margin: 80px 0;
+    }
+    .about-us{
+        padding: 0 10%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .about-right-img{
+        width: 300px;
+        margin: 80px 0;
+    }
+}
 @media screen and (max-width: 1000px){
     nav{
         position: relative;
@@ -110,5 +215,14 @@ nav{
     }
     .menu-bar{
         display: block;
+    }
+}
+@media screen and (max-width: 850px){
+    .about-us{
+        display: block;
+    }
+    .about-right-img{
+        width: 100%;
+        margin: 30px 0;
     }
 }
