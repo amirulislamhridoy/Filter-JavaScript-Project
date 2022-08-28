@@ -1,0 +1,74 @@
+[
+    {
+        "_id": "1",
+        "name": "Sweet Item",
+        "img": "https://js-beginners.github.io/filter-project/img/sweets-1.jpeg",
+        "price": "5"
+    },
+    {
+        "_id": "2",
+        "name": "Cupcake Item",
+        "img": "ttps://js-beginners.github.io/filter-project/img/cupcake-1.jpeg",
+        "price": "5"
+    },
+    {
+        "_id": "3",
+        "name": "Cake Item",
+        "img": "https://js-beginners.github.io/filter-project/img/cake-1.jpeg",
+        "price": "5"
+    },
+    {
+        "_id": "4",
+        "name": "Dougnut Item",
+        "img": "https://js-beginners.github.io/filter-project/img/doughnut-1.jpeg",
+        "price": "5"
+    },
+    {
+        "_id": "5",
+        "name": "Sweet Item",
+        "img": "https://js-beginners.github.io/filter-project/img/cupcake-2.jpeg",
+        "price": "10"
+    },
+    {
+        "_id": "6",
+        "name": "Cupcake Item",
+        "img": "https://js-beginners.github.io/filter-project/img/cake-2.jpeg",
+        "price": "10"
+    },
+    {
+        "_id": "7",
+        "name": "Cake Item",
+        "img": "https://js-beginners.github.io/filter-project/img/doughnut-2.jpeg",
+        "price": "10"
+    },
+    {
+        "_id": "8",
+        "name": "Dougnut Item",
+        "img": "https://js-beginners.github.io/filter-project/img/sweets-3.jpeg",
+        "price": "10"
+    },
+    {
+        "_id": "9",
+        "name": "Sweet Item",
+        "img": "https://js-beginners.github.io/filter-project/img/cupcake-3.jpeg",
+        "price": "15"
+    },
+    {
+        "_id": "10",
+        "name": "Cupcake Item",
+        "img": "https://js-beginners.github.io/filter-project/img/cake-3.jpeg",
+        "price": "15"
+    },
+    {
+        "_id": "11",
+        "name": "Cake Item",
+        "img": "https://js-beginners.github.io/filter-project/img/doughnut-3.jpeg",
+        "price": "15"
+    },
+    {
+        "_id": "12",
+        "name": "Dougnut Item",
+        "img": "",
+        "price": "15"
+    }
+]
