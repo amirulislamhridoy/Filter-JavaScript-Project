@@ -174,7 +174,56 @@ nav{
     width: 500px;
     font-family: 'Kaushan Script';
 }
-
+#store-card-container{
+    margin: 0 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    padding-bottom: 60px;
+}
+.store-card{
+    width: 350px;
+    background-color: white;
+}
+.store-card-1{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.store-card-1 .fa-cart-shopping{
+    position: absolute;
+    right: -44px;
+    bottom: -46px;
+    font-size: 20px;
+    border: 1px solid rgba(255, 225, 0, 0.879);
+    padding: 15px 10px;
+    border-top-left-radius: 15px;
+}
+.store-card-1:hover img{
+    scale: 1.2;
+    transition-duration: 1s;
+}
+.store-card-1:hover .fa-cart-shopping{
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 225, 0, 0.879);
+    transition-duration: 1s;
+}
+.store-card-2{
+    padding: 13px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.store-card span{
+    font-size: 20px;
+}
+.store-card b{
+    font-size: 20px;
+    color: black;
+}
+.store-card img{
+    width: 100%;
+}
 
 
 
