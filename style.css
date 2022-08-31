@@ -66,6 +66,8 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 .banner h1{
     color: white;
@@ -75,16 +77,78 @@ nav{
     color: var(--color);
     font-size: 60px;
 }
-.banner button{
-    font-size: 30px;
+.banner a{
+    font-size: 26px;
     background-color: transparent;
     border-radius: 5px;
     border: 2px solid black;
     cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
 }
-.banner button:hover{
+.banner a:hover{
     color: var(--color);
     background-color: black;
+}
+.banner-side{
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    padding: 25px;
+    padding-top: 30px;
+    background-color: rgba(223, 223, 131, 0.774);
+    transition: all .5s;
+}
+.side-up-1, .side-up-2{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.side-up-1 div, .side-up-2 div{
+    display: flex;
+    flex-direction: column;
+}
+.side-up i{
+    color: rgba(207, 45, 45, 0.827);
+    cursor: pointer;
+}
+.banner-side img{
+    border-radius: 50%;
+}
+.banner-side b{
+    color: black;
+    font-size: 16px;
+}
+.side-down{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    text-align: center;
+}
+.side-down b{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.side-down button{
+    width: 110px;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.side-down button:hover{
+    color: var(--color);
+    background-color: black;
+}
+.side-down button.checkout{
+    color: rgba(207, 45, 45, 0.827);
+    border-color: rgba(207, 45, 45, 0.827);
+}
+.side-down .checkout:hover{
+    color: black;
+    background-color: rgba(207, 45, 45, 0.827);
 }
 /* about us */
 .about-us{

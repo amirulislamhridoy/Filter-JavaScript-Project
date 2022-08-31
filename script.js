@@ -8,6 +8,8 @@ const cakeBtn = document.getElementById('cake-btn')
 const cupcakeBtn = document.getElementById('cupcake-btn')
 const sweetBtn = document.getElementById('sweet-btn')
 const doughnutBtn = document.getElementById('doughnut-btn')
+const headerLastBtn = document.getElementById('header-last-btn')
+const bannerSide = document.getElementById('banner-side')
 
 menuBar.addEventListener('click', menuDownShow)
 input.addEventListener('keyup', (e) => foodFn(e.target.value))
@@ -77,3 +79,15 @@ const foodFn2 = (e) => {
         }
     })
 }
+
+let toggle = true;
+headerLastBtn.addEventListener('click', () => {
+    toggle = !toggle
+    if(toggle){
+        bannerSide.style.right = '0'
+    }else{
+        bannerSide.style.right = '-300px'
+    }
+})
+
+// hello
